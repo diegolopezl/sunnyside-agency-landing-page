@@ -16,6 +16,7 @@ a {
 html,
 body {
   min-height: 100vh;
+  min-width: 375px;
   display: grid;
   place-content: center;
   font-size: 16px;
@@ -52,6 +53,7 @@ body {
 .glass,
 .gal-img {
   height: 100%;
+  width: 100%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -205,20 +207,21 @@ body {
   letter-spacing: 5px;
   line-height: 50px;
   position: relative;
-  top: -400px;
+  top: -80%;
   color: white;
   z-index: 0;
 }
 
 .arrow {
   position: relative;
-  top: -350px;
+  top: -65%;
   margin: 0 auto;
   z-index: 0;
 }
 
 .main-container > .articles {
-  height: 440px;
+  height: 100%;
+  max-height: 600px;
   padding: 75px 0;
 }
 
@@ -318,7 +321,11 @@ body {
   color: #2d7466;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  .fa-bars {
+    display: none;
+  }
+
   .main-container {
     grid-template:
       800px 600px 600px 600px 760px 450px 350px
@@ -327,6 +334,46 @@ body {
 
   .page-header {
     width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template: 90px / 15% 40% 45%;
+    grid-template-areas: "left . right";
+  }
+
+  .page-header a {
+    position: relative;
+    grid-area: left;
+    justify-self: center;
+    grid-column: 1 / 2;
+    top: -25px;
+  }
+
+  .desktop-nav {
+    display: flex;
+    position: relative;
+    grid-area: right;
+    justify-self: end;
+    align-items: center;
+    grid-column: 3 / 4;
+    top: -5px;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 25px;
+  }
+
+  #contact-desktop {
+    text-align: center;
+    width: 125px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    color: black;
   }
 
   /* Row Layout */
@@ -381,6 +428,11 @@ body {
 
   .testimonials {
     flex-direction: row;
+    margin: 25px 100px 100px 100px;
+  }
+
+  .client-section h4 {
+    margin-top: 75px;
   }
 
   .gallery {
@@ -392,11 +444,37 @@ body {
     height: 350px;
   }
 
-  .fa-bars {
-    display: none;
+  .footer-link {
+    padding: 25px 600px;
+  }
+  .footer-icon {
+    padding: 50px 650px;
   }
 
-  .desktop-nav {
-    display: block;
+  .yellow:hover::before {
+    cursor: pointer;
+    transform: scale(1.0005);
+    opacity: 1;
+  }
+
+  .red:hover::before {
+    cursor: pointer;
+    transform: scale(1.0005);
+    opacity: 1;
+  }
+
+  #contact-desktop:hover {
+    cursor: pointer;
+    background-color: #8cd4f8;
+  }
+  .desktop-nav a:hover {
+    font-size: 110%;
+    opacity: 0.8;
+  }
+
+  #contact-desktop:hover,
+  .footer-icon a:hover,
+  .footer-link a:hover {
+    color: white;
   }
 }
