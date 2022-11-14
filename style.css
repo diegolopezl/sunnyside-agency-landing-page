@@ -233,11 +233,6 @@ body {
   background: #fe7867;
 }
 
-.cherry-fig p,
-.orange-fig p {
-  padding: 30px 200px;
-}
-
 .client-section {
   height: 1225px;
 }
@@ -429,6 +424,11 @@ body {
   .offer-2,
   .orange-fig {
     grid-column: 2 / 3;
+  }
+
+  .cherry-fig p,
+  .orange-fig p {
+    padding: 30px 200px;
   }
 
   .testimonials {
