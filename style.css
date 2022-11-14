@@ -233,6 +233,11 @@ body {
   background: #fe7867;
 }
 
+.cherry-fig p,
+.orange-fig p {
+  padding: 30px 200px;
+}
+
 .client-section {
   height: 1225px;
 }
