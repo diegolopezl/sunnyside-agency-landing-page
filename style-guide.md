@@ -11,18 +11,18 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Soft red: hsl(7, 99%, 70%)
-- Yellow: hsl(51, 100%, 49%)
-- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
-- Dark blue (photography text): hsl(198, 62%, 26%)
-- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+- Yellow (1st Article Link underline): #fad400
+- Soft red (2nd Article Link underline): #fe7867
+- Dark desaturated cyan (graphic design text): #25564b
+- Dark blue (photography text): #19536b
+- Dark moderate cyan (footer text): #458c7e
 
 ### Neutral
 
-- Very dark desaturated blue: hsl(212, 27%, 19%)
-- Very dark grayish blue: hsl(213, 9%, 39%)
-- Dark grayish blue: hsl(232, 10%, 55%)
-- Grayish blue: hsl(210, 4%, 67%)
+- Very dark desaturated blue (article heading color): #23303e
+- Very dark grayish blue (testimonial paragraph color): #5a636c
+- Dark grayish blue (article paragraph color): #818498
+- Grayish blue (client titles): #a7abae
 - White: hsl(0, 0%, 100%)
 
 ## Typography
