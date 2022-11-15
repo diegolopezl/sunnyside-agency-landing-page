@@ -425,6 +425,7 @@ body {
     grid-column: 2 / 3;
   }
 
+<<<<<<< HEAD
   .articles {
     display: flex;
     flex-direction: column;
@@ -450,6 +451,11 @@ body {
   .orange-fig p {
     padding-left: 210px;
     padding-right: 210px;
+=======
+  .cherry-fig p,
+  .orange-fig p {
+    padding: 30px 200px;
+>>>>>>> 2646635921906e1ee9d30c76320a2db7cf4d431e
   }
 
   .testimonials {
